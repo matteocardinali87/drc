@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc
+END
+plot_dirc.C
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/plot_dirc.C
+END
+sim_dirc_evtgen.C
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/sim_dirc_evtgen.C
+END
+hit_dirc_draw.C
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/hit_dirc_draw.C
+END
+createRootGeometry_DIRC.C
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/createRootGeometry_DIRC.C
+END
+draw_geom.C
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/draw_geom.C
+END
+hit_dirc.C
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/hit_dirc.C
+END
+eventDisplay.C
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/eventDisplay.C
+END
+hit_dirc_real.C
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/hit_dirc_real.C
+END
+sim_dirc.C
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/sim_dirc.C
+END
+sim_dirc_dpm.C
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/sim_dirc_dpm.C
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/README
+END
+digi_dirc.C
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/fairroot/!svn/ver/15930/pandaroot/release/july12/macro/drc/digi_dirc.C
+END

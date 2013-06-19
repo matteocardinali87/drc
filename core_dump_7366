@@ -1,0 +1,47 @@
+
+Thread 1 (process 7366):
+#0  0x00007fff8fcfa6ac in wait4 ()
+#1  0x00007fff99e9b062 in system ()
+#2  0x0000000100791a69 in TUnixSystem::Exec (this=0x7fa862c07750, shellcmd=0x7fa865b848b0 "/Users/matteocardinali/fairroot//etc/gdb-backtrace.sh /Users/matteocardinali/fairroot//bin/root.exe 7366 1>&2") at /Users/matteocardinali/source/sep12/tools/root/core/unix/src/TUnixSystem.cxx:2084
+#3  0x0000000100792613 in TUnixSystem::StackTrace (this=0x7fa862c07750) at /Users/matteocardinali/source/sep12/tools/root/core/unix/src/TUnixSystem.cxx:2332
+#4  0x0000000107111a27 in FairLogger::Fatal (this=<value temporarily unavailable, due to optimizations>, file=<value temporarily unavailable, due to optimizations>, line=<value temporarily unavailable, due to optimizations>, func=<value temporarily unavailable, due to optimizations>, format=<value temporarily unavailable, due to optimizations>) at /Users/matteocardinali/pandaroot/fairtools/FairLogger.cxx:78
+#5  0x000000010755b11f in FairModule::AssignMediumAtImport (this=0x7fa8631f6000, v=0x7fa865b650e0) at /Users/matteocardinali/pandaroot/base/FairModule.cxx:404
+#6  0x000000010755b3fc in FairModule::ExpandNode (this=0x7fa8631f6000, fN=<value temporarily unavailable, due to optimizations>) at /Users/matteocardinali/pandaroot/base/FairModule.cxx:345
+#7  0x000000010755aec9 in FairModule::ConstructRootGeometry (this=<value temporarily unavailable, due to optimizations>) at /Users/matteocardinali/pandaroot/base/FairModule.cxx:311
+#8  0x00000001096f4711 in PndDrc::ConstructGeometry (this=0x7fa8631f6000) at /Users/matteocardinali/pandaroot/drc/PndDrc.cxx:975
+#9  0x0000000107557058 in FairModule::GetModId () at /Users/matteocardinali/pandaroot/base/FairModule.h:636
+#10 0x0000000107557058 in FairMCApplication::ConstructGeometry (this=0x7fa864373ba0) at /Users/matteocardinali/pandaroot/base/FairMCApplication.cxx:637
+#11 0x000000010da8afcc in TG4GeometryManager::ConstructG4Geometry (this=0x7fa864409510) at geometry/src/TG4GeometryManager.cxx:260
+#12 0x000000010da8cbd9 in TG4GeometryManager::ConstructGeometry (this=0x7fa864409510) at geometry/src/TG4GeometryManager.cxx:539
+#13 0x000000010da85ec9 in TG4DetConstruction::Construct (this=0x7fa86442cbf0) at geometry/src/TG4DetConstruction.cxx:48
+#14 0x000000010ba02fcc in G4RunManager::InitializeGeometry ()
+#15 0x000000010ba02b8f in G4RunManager::Initialize ()
+#16 0x000000010db24fca in TG4RunManager::Initialize (this=0x7fa864414a00) at run/src/TG4RunManager.cxx:339
+#17 0x000000010db2d013 in TGeant4::Init (this=0x7fa864408b60) at run/src/TGeant4.cxx:1176
+#18 0x0000000107555d87 in FairMCApplication::InitMC (this=0x7fa864373ba0, setup=<value temporarily unavailable, due to optimizations>, cuts=0x0) at /Users/matteocardinali/pandaroot/base/FairMCApplication.cxx:212
+#19 0x0000000107572784 in FairRunSim::SetMCConfig (this=<value temporarily unavailable, due to optimizations>) at /Users/matteocardinali/pandaroot/base/FairRunSim.cxx:345
+#20 0x000000010757103e in FairRunSim::Init (this=0x7fa864157080) at /Users/matteocardinali/pandaroot/base/FairRunSim.cxx:196
+#21 0x00000001075da34a in G__G__BaseDict_997_0_5 (result7=0x7fff5f5b6aa0, funcname=0x7fa865b848b0 "/Users/matteocardinali/fairroot//etc/gdb-backtrace.sh /Users/matteocardinali/fairroot//bin/root.exe 7366 1>&2", libp=0x0, hash=<value temporarily unavailable, due to optimizations>) at /Users/matteocardinali/pandaroot/buildPanda/base/G__BaseDict.cxx:14818
+#22 0x00000001014f5664 in Cint::G__ExceptionWrapper (funcp=0x1075da330 <G__G__BaseDict_997_0_5>, result7=0x7fff5f5b6aa0, funcname=0x7fa864151560 "", libp=0x7fff5f5ac060, hash=0) at Api.cxx:393
+#23 0x0000000101600de2 in G__execute_call (result7=0x7fff5f5b6aa0, libp=0x7fff5f5ac060, ifunc=0x7fa864151560, ifn=0) at newlink.cxx:2408
+#24 0x0000000101601765 in G__call_cppfunc (result7=0x7fff5f5b6aa0, libp=0x7fff5f5ac060, ifunc=0x7fa864151560, ifn=0) at newlink.cxx:2612
+#25 0x00000001015c36f4 in G__interpret_func (result7=0x7fff5f5b6aa0, funcname=0x7fa863027000 "Init", libp=0x7fff5f5ac060, hash=404, p_ifunc=0x7fa864151560, funcmatch=1, memfunc_flag=1) at ifunc.cxx:5791
+#26 0x00000001015a62bc in G__getfunction (item=0x7fa863022406 "Init()", known3=0x7fff5f5b8d14, memfunc_flag=1) at func.cxx:2660
+#27 0x0000000101714067 in G__getstructmem (store_var_type=112, varname=
+0x7fff5f5b7d30, membername=0x7fa863022406 "Init()", memnamesize=2147483647, tagname=0x7fa863026400 "fRun", known2=0x7fff5f5b8d14, varglobal=0x101800c38, objptr=2) at var.cxx:6818
+#28 0x00000001017037ef in G__getvariable (item=0x7fa863022400 "fRun->Init()", known=0x7fff5f5b8d14, varglobal=0x101800c38, varlocal=0x0) at var.cxx:5402
+#29 0x0000000101595844 in G__getitem (item=0x7fa863022400 "fRun->Init()") at expr.cxx:1906
+#30 0x00000001015942a2 in G__getexpr (expression=0x7fa863049a00 "fRun->Init()") at expr.cxx:1488
+#31 0x000000010165197a in G__exec_function (statement=
+0x7fff5f5c2760, pc=0x7fff5f5c27a4, piout=0x7fff5f5c2794, plargestep=0x7fff5f5c2784, presult=0x7fff5f5c2720) at parse.cxx:645
+#32 0x0000000101647585 in G__exec_statement (mparen=0x7fff5f5c28dc) at parse.cxx:7364
+#33 0x000000010155f620 in G__exec_tempfile_core (file=0x7fa863024800 "/Users/matteocardinali/pandaroot/macro/drc/./sim_dirc.C", fp=0x0) at debug.cxx:266
+#34 0x000000010155f9f6 in G__exec_tempfile (file=0x7fa863024800 "/Users/matteocardinali/pandaroot/macro/drc/./sim_dirc.C") at debug.cxx:814
+#35 0x0000000101662540 in G__process_cmd (line=0x7fa863b08b50 ".x /Users/matteocardinali/pandaroot/macro/drc/./sim_dirc.C", prompt=0x7fa862c11f28 "", more=0x7fa862c11f20, err=0x7fff5f5c5b0c, rslt=0x7fff5f5c5b10) at pause.cxx:3188
+#36 0x0000000100730429 in TCint::ProcessLine (this=0x7fa862c11ee0, line=0x7fa863b08b50 ".x /Users/matteocardinali/pandaroot/macro/drc/./sim_dirc.C", error=0x7fff5f5c8ffc) at /Users/matteocardinali/source/sep12/tools/root/core/meta/src/TCint.cxx:545
+#37 0x0000000100730c9d in TCint::ProcessLineSynch (this=0x7fa862c11ee0, line=0x7fa863b08b50 ".x /Users/matteocardinali/pandaroot/macro/drc/./sim_dirc.C", error=0x7fff5f5c8ffc) at /Users/matteocardinali/source/sep12/tools/root/core/meta/src/TCint.cxx:624
+#38 0x0000000100644fb3 in TApplication::ExecuteFile (file=0x7fff5f5c6f73 "sim_dirc.C", error=0x7fff5f5c8ffc, keep=false) at /Users/matteocardinali/source/sep12/tools/root/core/base/src/TApplication.cxx:1028
+#39 0x0000000100644290 in TApplication::ProcessFile (this=0x7fa862cf48e0, file=0x7fff5f5c6f73 "sim_dirc.C", error=0x7fff5f5c8ffc, keep=false) at /Users/matteocardinali/source/sep12/tools/root/core/base/src/TApplication.cxx:904
+#40 0x0000000100644195 in TApplication::ProcessLine (this=0x7fa862cf48e0, line=0x7fff5f5c6f70 ".x sim_dirc.C", sync=false, err=0x7fff5f5c8ffc) at /Users/matteocardinali/source/sep12/tools/root/core/base/src/TApplication.cxx:877
+#41 0x0000000101e2157a in TRint::Run (this=0x7fa862cf48e0, retrn=false) at /Users/matteocardinali/source/sep12/tools/root/core/rint/src/TRint.cxx:418
+#42 0x0000000100637714 in main (argc=1, argv=0x7fff5f5c90c8) at /Users/matteocardinali/source/sep12/tools/root/main/src/rmain.cxx:29
