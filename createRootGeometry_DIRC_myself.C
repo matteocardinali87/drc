@@ -687,7 +687,7 @@ void createRootGeometry_DIRC_myself(Bool_t sepEV = kTRUE, Int_t fFocusingSystem 
     abox->AddNode(smallEVs, 1, new TGeoCombiTrans(dx,dy+shift_bar_EV/2.,-bar_lenght/2.-EV_lenght/2.-air_gap,new TGeoRotation(0)));
     TGeoRotation *rot_bar= new TGeoRotation();
     rot_bar->RotateZ(0.);
-    //abox->AddNode(bar,  1, new TGeoCombiTrans(dx, dy, dz_bar, rot_bar));
+    abox->AddNode(bar,  1, new TGeoCombiTrans(dx, dy, dz_bar, rot_bar));
     
     
     //MCP Like plane
